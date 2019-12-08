@@ -5,7 +5,8 @@ const requestHandlers = require('./request-handlers.js');
 const handle = {
     '/': requestHandlers.start,
     '/start': requestHandlers.start,
-    '/upload': requestHandlers.upload
+    '/upload': requestHandlers.upload,
+    '/show': requestHandlers.show
 };
 
 server.start(router.route, handle);
